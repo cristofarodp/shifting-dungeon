@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:production": "node build.mjs --production",
+    "start": "npm run build && esbuild --servedir=dist --serve=8080"
+  },
+  "keywords": [],
+  "author": "Cristofaro Del Prete",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "js-yaml": "5.5.0",
+    "markdown-it": "15.0.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

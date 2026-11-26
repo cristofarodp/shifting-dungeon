@@ -1,0 +1,55 @@
+\section{7. Doors and thresholds}
+
+\subsection{Initial door generation}
+
+The dungeon begins with 50 connections, represented by 100 directional door faces. Four entrance connections are initially unlocked and untrapped. From the remaining 46, exactly ten are randomly selected to be locked and five independently selected to be trapped. A connection may belong to both selections. These quotas apply before the treasure's special security.
+
+\begin{longtable}{p{0.34\linewidth}p{0.6\linewidth}}
+
+\rowcolor{tablehead} \textbf{Door state} & \textbf{Meaning} \\
+
+\endfirsthead
+
+\rowcolor{tablehead} \textbf{Door state} & \textbf{Meaning} \\
+
+\endhead
+
+Unlocked & Opens normally \\
+
+Locked & Requires unlocking \\
+
+Trapped & Contains an active trap \\
+
+Locked and trapped & Both restrictions apply \\
+
+\end{longtable}
+
+\subsection{Directional door states}
+
+Each room retains its own directional door state. Initially both faces match. After a shift, a face may connect to a different room with a different state.
+
+\begin{center}\input{assets/diagram-2.tex}\end{center}
+
+Players may exploit this deliberately. A previously inaccessible room may become accessible after a shift, and an easy return route may become obstructed. When a lock or trap is resolved, the resulting door state is synchronized with the currently connected opposite face.
+
+\subsection{Inspecting doors}
+
+Describe physical appearance when players examine a door. Locked doors have a visible padlock attached to the handle; the doors themselves have no conventional keyholes. Trapped doors have distinctive appearances associated with their mechanisms. Harmless doors also have unusual and sometimes threatening designs, so an intimidating appearance is not proof of danger. Players can learn to recognize particular trapped designs.
+
+\subsection{Unlocking doors}
+
+A locked door can be opened using an appropriate key, thieves' tools, force or suitable magic, subject to adjudication. Allow ordinary lockpicking checks and destructive attempts against the padlock rather than the magically protected door itself. Keys provide reliable access without a check or prolonged effort. Unlocking does not automatically disarm a trap on the same face.
+
+\subsection{Opening a door}
+
+Only one door can be open anywhere in the dungeon at a time. If multiple characters attempt to open different doors simultaneously, resolve the conflict using opposed initiative checks. Only the winner opens their door. An unsuccessful attempt should not consume a key, trigger an opening-related trap or cause a shift.
+
+A successfully opened door remains open for approximately six seconds, equivalent to one combat round. Outside combat, avoid measuring real-world seconds. Give players a reasonable opportunity to declare immediate actions while preserving the limited fictional window.
+
+\subsection{Crossing a threshold}
+
+While a door is open, characters may move between connected rooms. They may enter, retreat, remain where they are or split the group. Opening does not require crossing. Discovery occurs on opening, while other mechanics depend on actual entry or crossing.
+
+\subsection{Closing a door}
+
+A closing door cannot be physically obstructed. If a character or object occupies the threshold, it is harmlessly displaced randomly to one of the two rooms. Enemies and bosses are always displaced back into their own chamber. For consistency, count a player displaced into the opposite room as having crossed. Mundane wedges cannot hold doors open; specific magical objects may provide exceptions.

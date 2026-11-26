@@ -1,0 +1,21 @@
+\section{6. The shifting mechanic}
+
+Whenever a door is successfully opened, the dungeon attempts to shift one row or column by one position in a randomly selected direction. A shift moves entire chambers, including their contents and occupants.
+
+\begin{center}\input{assets/diagram-1.tex}\end{center}
+
+\subsection{Restrictions}
+
+A shift cannot move the entrance, either chamber connected by the open door, or a chamber protected by an applicable magical anchor. After doomsday begins, a shift must also preserve connectivity between all remaining chambers. If no legal shift exists, the door opens normally without a shift.
+
+\subsection{Narrating shifts}
+
+Characters hear the movement of stone. Give information about direction and distance of the shifting row or column relative to their current position.
+
+\begin{quote}\itshape A deep grinding sound echoes from somewhere two chambers to the north. You hear enormous blocks of stone sliding eastward before everything falls silent again.\end{quote}
+
+The sound provides useful navigational information without revealing the complete layout. Characters inside moving chambers remain in them and are not damaged merely because the room moves.
+
+\subsection{Manual and controlled shifts}
+
+Certain magical objects allow players to influence or prevent shifts. These effects must respect ordinary structural restrictions. A controlled shift cannot move the entrance or disconnect the remaining dungeon. An illegal controlled shift does not consume the magical object. Distinguish player-controlled shifts from manual corrections to dungeon state.

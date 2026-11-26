@@ -1,0 +1,516 @@
+- name: Entrance
+  type: entrance
+  appearance: A broad square chamber of pale stone lies before you, its walls lit by steady, gentle light. Four doorways stand at the centers of the walls, their frames carved with simple geometric patterns. The air is still and clean, and the floor bears faint traces of countless footsteps leading in different directions.
+  id: entrance
+- name: Forgotten Library
+  type: empty
+  appearance: Tall shelves of dark wood stretch toward the ceiling, packed with books of every size. Their spines bear no titles, and the open volumes on the reading desks contain nothing but immaculate blank pages. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  id: forgotten-library
+- name: Eternal Garden
+  type: empty
+  appearance: A marble fountain bubbles among lush ferns and flowering trees. Above the foliage, a midnight sky glitters with stars despite the solid stone walls, and the air smells of rain and crushed mint. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  id: eternal-garden
+- name: Upside-Down Hall
+  type: empty
+  appearance: Heavy tables, upholstered chairs and elaborate chandeliers hang from the ceiling as though the entire chamber has been turned upside down. A carpet clings overhead, its tassels dangling toward the bare stone beneath your feet. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  id: upside-down-hall
+- name: Silent Banquet
+  type: empty
+  appearance: A long banquet table gleams with silverware, crystal goblets and steaming dishes. Every chair stands empty, and the scent of roasted meat mingles with sweet wine. Candles burn without shortening. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  id: silent-banquet
+- name: Hall of Faces
+  type: empty
+  appearance: Hundreds of faces emerge from the stone walls, some laughing, some weeping and others twisted in anger. Their polished eyes catch the light at different angles, creating the uncomfortable impression of being watched. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  id: hall-of-faces
+- name: Frozen Moment
+  type: empty
+  appearance: Droplets of water hang motionless above a basin, and a candle flame stands perfectly still. Dust suspended in the air sparkles like tiny stars. A toppled cup hangs inches above the floor. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  id: frozen-moment
+- name: False Observatory
+  type: empty
+  appearance: A domed ceiling displays unfamiliar constellations that slowly rearrange themselves. Brass telescopes point upward from a circular platform, and engraved star charts cover the walls. No two charts seem to depict quite the same sky. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  id: false-observatory
+- name: Four Seasons
+  type: puzzle
+  appearance: Four statues stand on movable pedestals around a central chest. One carries blossoms, another ripe grain, another fallen leaves and the last a mantle of snow. A circular groove connects their bases. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Arrange the statues in spring, summer, autumn, winter order clockwise from the blossom-marked pedestal; the chest unlocks.
+  id: four-seasons
+- name: Silent Orchestra
+  type: puzzle
+  appearance: An assortment of instruments rests on stands around a chest. Without any visible musician, a flute, harp and drum sound a brief sequence of notes before falling silent. Their surfaces shimmer faintly. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Repeat the audible flute, harp, drum sequence using the instruments; repeat the clue on request.
+  id: silent-orchestra
+- name: Balance Chamber
+  type: puzzle
+  appearance: Three enormous scales stand around a chest, their empty pans suspended on chains. Marked stone weights lie scattered across a low table. The scales creak softly whenever their chains sway. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Provide weights marked 1, 2, 3, 4, 5, 6; balance the three scales with pairs totaling seven (1+6, 2+5, 3+4).
+  id: balance-chamber
+- name: Broken Mosaic
+  type: puzzle
+  appearance: A shattered mural occupies the far wall, its brightly colored tiles fitted into a network of sliding grooves. Fragments depict towers, clouds and unfamiliar figures. A chest rests beneath the unfinished image. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Slide the tiles to reconstruct the mural, matching continuous tower outlines and sky colors; allow a sketch or logical explanation.
+  id: broken-mosaic
+- name: Chamber of Reflections
+  type: puzzle
+  appearance: Tall mirrors stand on rotating bases around a crystal mounted above a chest. A narrow beam of white light strikes one mirror, scattering pale reflections across the walls and floor. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Rotate the mirrors to direct the beam into the crystal above the chest; describe how each adjustment changes the reflected path.
+  id: chamber-of-reflections
+- name: Liar’s Court
+  type: puzzle
+  appearance: Several stone figures face a central chest, each bearing a plaque with a different statement. An inscription above them reads that only one speaks truth. Their carved expressions range from solemn to smug. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: 'Use three plaques: A says the key is under B; B says it is under A; C says it is not under A. Exactly one is true only if the key is under C. Searching C opens the chest.'
+  id: liars-court
+- name: Celestial Lock
+  type: puzzle
+  appearance: Concentric brass rings surround a chest, each engraved with stars and strange celestial symbols. A constellation glows on the ceiling above them. The rings rest in tracks worn smooth by movement. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Rotate the brass rings until their star patterns match the ceiling constellation; aligned rings release the chest.
+  id: celestial-lock
+- name: Forgotten Language
+  type: puzzle
+  appearance: An inscription in unfamiliar characters covers a stone tablet above a chest. Smaller tablets scattered nearby pair some of those characters with pictures of animals, tools and natural objects. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: 'Provide a simple pictogram substitution clue: sun, hand, door correspond to light, touch, open. The inscription instructs touching the sun symbol on the door of the chest.'
+  id: forgotten-language
+- name: Alchemist’s Table
+  type: puzzle
+  appearance: Glass vessels filled with vivid liquids crowd a workbench beside a chest. A strip of colored glass displays a sequence of hues. Empty mixing bowls and stained measuring cups sit within reach. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Match the colored strip by placing vessels in its displayed order; no mixing or real chemistry required.
+  id: alchemists-table
+- name: Clockmaker’s Workshop
+  type: puzzle
+  appearance: A complicated clockwork assembly rises behind a chest. Three clock faces show different times, and exposed gears mesh beneath their hands. Several brass levers protrude from the mechanism. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Set all three clock faces to the same time by manipulating the linked gears; allow experimentation and describe each gear's effect.
+  id: clockmakers-workshop
+- name: Chamber of Shadows
+  type: puzzle
+  appearance: A bright lamp illuminates a collection of oddly shaped objects on movable stands. Their shadows overlap across a white wall above a chest, where the outline of a key has been painted. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Rotate and reposition the objects until their combined shadow matches the painted key outline.
+  id: chamber-of-shadows
+- name: Labyrinth Table
+  type: puzzle
+  appearance: A miniature maze of twenty-five chambers occupies a stone table beside a chest. Tiny corridors connect its rooms, and a small figure stands within the central square. Sections of the model slide with quiet clicks. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Move the miniature figure to a marked exit by sliding rows or columns without moving its occupied chamber; allow wraparound and a solvable starting layout.
+  id: labyrinth-table
+- name: Memory Vault
+  type: puzzle
+  appearance: A grid of polished tiles surrounds a chest. Several tiles light up in succession, each accompanied by a soft chime, before the entire floor returns to darkness. The sequence begins again after a brief silence. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Repeat a five-tile light sequence in order; replay the sequence after an incorrect attempt.
+  id: memory-vault
+- name: Elemental Shrine
+  type: puzzle
+  appearance: Four alcoves contain a brazier, a basin, a stone and a gently spinning vane. Symbols and short inscriptions decorate the surrounding pillars, and a chest stands at the center of the arrangement. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Match the four elemental symbols to the brazier, basin, stone and vane (fire, water, earth, air); activate them in the order indicated by the pillar inscriptions.
+  id: elemental-shrine
+- name: Ossuary
+  type: easy_fight
+  appearance: Piles of yellowed bones fill shallow niches and spill across the floor around a chest. Skulls turn slowly toward the doorway as loose ribs and limbs begin assembling into upright figures. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Use a small group of skeletons; they advance directly and surround isolated characters.
+  id: ossuary
+- name: Abandoned Barracks
+  type: easy_fight
+  appearance: Rows of battered bunks and weapon stands surround a chest. Empty suits of armor straighten themselves with metallic rattles, raising rusted weapons as their hollow helmets turn toward the doorway. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Use animated armor or weaker animated equipment; enemies defend the central chest.
+  id: abandoned-barracks
+- name: Spider Nest
+  type: easy_fight
+  appearance: Thick webs stretch between pillars and across the ceiling above a chest. Wrapped bundles hang among the strands, and enormous spiders creep into view, their legs tapping against the stone. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Use a few giant spiders or smaller spiders; webs impede movement and spiders attempt to restrain prey.
+  id: spider-nest
+- name: Rat Warren
+  type: easy_fight
+  appearance: Gnawed scraps and shredded cloth litter the floor around a chest. Small holes pepper the walls, and a growing tide of rats pours from them, their eyes gleaming in the dim light. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Use rats or a small swarm; they attack exposed characters and scatter from strong threats.
+  id: rat-warren
+- name: Impish Playground
+  type: easy_fight
+  appearance: Tiny chairs and overturned toys surround a chest. High-pitched laughter echoes from behind the furniture, and small horned figures peek out with mischievous grins and sharp claws. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Use weak imps or lesser fiends; they harass from cover and attempt distractions.
+  id: impish-playground
+- name: Rotten Crypt
+  type: easy_fight
+  appearance: Partially opened coffins line the walls around a chest. The smell of damp earth and decay hangs heavily in the air. Grey hands curl around coffin lids as shambling figures pull themselves upright. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Use a small group of zombies; slow movement allows characters to evade them.
+  id: rotten-crypt
+- name: Living Armory
+  type: easy_fight
+  appearance: Weapon racks surround a chest in the middle of a dusty armory. Several swords tremble in their brackets, then rise into the air, their blades turning toward the doorway without visible hands. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Use flying swords; they pursue nearby characters within the room.
+  id: living-armory
+- name: Mushroom Grove
+  type: easy_fight
+  appearance: Clusters of luminous mushrooms surround a chest, casting blue and violet light across the chamber. Several squat fungal shapes detach themselves from the growths, releasing little clouds of drifting spores. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Use weak fungal creatures; spores briefly hinder nearby characters.
+  id: mushroom-grove
+- name: Ooze Nursery
+  type: easy_fight
+  appearance: Cracked glass containers line the walls around a chest. Translucent slime seeps from their bases, gathering into quivering masses that slide across the floor with wet sucking sounds. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Use small oozes; they approach slowly and threaten equipment at close range.
+  id: ooze-nursery
+- name: Gargoyle Gallery
+  type: easy_fight
+  appearance: Stone gargoyles crouch on low pedestals around a chest. Their wings unfold with a grinding noise, and chips of stone scatter as their claws scrape the pedestal edges. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Use weakened gargoyles or small animated statues; they swoop from pedestals.
+  id: gargoyle-gallery
+- name: Paper Archive
+  type: easy_fight
+  appearance: Loose sheets of parchment whirl above a chest in a room crowded with filing shelves. The papers fold and interlock into angular figures, their edges rustling like a swarm of insects. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Use animated paper constructs; they swarm and are vulnerable to appropriate fire effects.
+  id: paper-archive
+- name: Kennel
+  type: easy_fight
+  appearance: Empty iron cages line the walls around a chest. Chains rattle and ghostly shapes emerge through the bars, forming translucent hounds whose paws make no sound on the stone. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Use weak spectral hounds; they flank and pursue within the chamber.
+  id: kennel
+- name: Toymaker’s Workshop
+  type: easy_fight
+  appearance: Wooden soldiers and porcelain dolls stand on shelves around a chest. Their painted eyes swivel toward you, and tiny feet begin marching in unison across the floor. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Use animated toys; they attack in groups from low cover.
+  id: toymakers-workshop
+- name: Dust Chamber
+  type: easy_fight
+  appearance: Decorative urns surround a chest beneath layers of thick dust. Several lids rattle, and swirling clouds rise from their mouths, forming small winged figures with glittering eyes. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Use minor dust mephits or similar creatures; dust clouds obscure vision.
+  id: dust-chamber
+- name: Living Kitchen
+  type: easy_fight
+  appearance: Copper pots hang above a chest in a vast kitchen. Knives lift from chopping boards, pans rattle on their hooks, and utensils begin moving through the air as though wielded by invisible cooks. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Use animated utensils; knives and pans attack from different heights.
+  id: living-kitchen
+- name: Dart Gallery
+  type: easy_trap
+  appearance: Rows of tiny holes puncture the walls above a patterned floor. A chest sits beyond several slightly raised tiles, and broken darts lie scattered near the doorway. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Raised pressure tiles trigger darts; avoid or jam tiles, or use cover.
+  id: dart-gallery
+- name: Pendulum Hall
+  type: easy_trap
+  appearance: Broad metal blades hang from long swinging arms above a chest. Their rhythmic passage through the chamber produces a steady whistle, and deep cuts scar the stone beneath them. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Swinging blades strike their paths periodically; time movement or immobilize the arms.
+  id: pendulum-hall
+- name: Slippery Chamber
+  type: easy_trap
+  appearance: A glossy coating covers the floor around a chest, reflecting the walls like dark glass. Scratches near the doorway lead toward scattered handholds and rough patches of stone. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: The slick floor causes falls or sliding; use handholds, ropes or rough patches.
+  id: slippery-chamber
+- name: Steamworks
+  type: easy_trap
+  appearance: Copper pipes cross the ceiling and descend into vents around a chest. Jets of white steam burst from different openings in succession, filling the chamber with a hiss and the smell of hot metal. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Steam vents erupt in a repeating sequence; time crossings or shut valves.
+  id: steamworks
+- name: Electrified Floor
+  type: easy_trap
+  appearance: Metal tiles surround a chest, their edges flickering with blue sparks. Some tiles glow while others remain dark, and the pattern changes with a sharp crackle from the walls. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Energized tiles shock creatures; follow dark tiles or interrupt the power supply.
+  id: electrified-floor
+- name: Grasping Garden
+  type: easy_trap
+  appearance: Thick vines spill from planters around a chest, their tendrils curling and uncurling across the floor. Leaves tremble without wind, and several branches reach toward the doorway. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Vines restrain nearby creatures; cut tendrils or avoid their reach.
+  id: grasping-garden
+- name: Gravity Well
+  type: easy_trap
+  appearance: Loose pebbles slide across the floor toward a dark orb suspended above a chest. Dust streams inward from every direction, while the stone along the outer walls remains comparatively clear. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: The orb pulls creatures inward; secure ropes or travel along the perimeter.
+  id: gravity-well
+- name: Acid Rain Chamber
+  type: easy_trap
+  appearance: Greenish droplets fall from a stained ceiling around a chest. Where they strike exposed stone, tiny wisps of vapor rise. Several low stone overhangs shelter patches of dry floor. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Acid droplets damage exposed creatures; use cover or shielded routes.
+  id: acid-rain-chamber
+- name: Sleep Laboratory
+  type: easy_trap
+  appearance: Glass tubes bubble beside a chest, feeding a pale mist that drifts close to the floor. Cushioned benches line the walls, and the air carries a heavy, sweet fragrance. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Mist induces sleep; avoid low areas, ventilate or interrupt the tubes.
+  id: sleep-laboratory
+- name: Chamber of Bells
+  type: easy_trap
+  appearance: Bells of different sizes hang from the ceiling above a chest. Their polished surfaces tremble at the slightest sound, and a faint hum passes through the stone whenever a bell moves. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Loud noises trigger damaging resonances; move quietly or dampen bells.
+  id: chamber-of-bells
+- name: Rolling Stones
+  type: easy_trap
+  appearance: Deep grooves cross the floor around a chest. Heavy stone spheres rumble along several channels, disappearing into openings in the walls. Narrow alcoves interrupt the otherwise smooth masonry. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Rolling spheres crush creatures in channels; cross between passes or block channels.
+  id: rolling-stones
+- name: Freezing Vault
+  type: easy_trap
+  appearance: Frost coats the walls and a chest stands amid drifting ice crystals. Your breath turns white in the bitter air, and icicles hang from pipes that emit a low, steady hum. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Extreme cold accumulates exposure; insulate, move quickly or disable cooling pipes.
+  id: freezing-vault
+- name: Magnetic Forge
+  type: easy_trap
+  appearance: Massive metal coils flank a chest, humming as iron filings crawl across the floor. Loose nails twitch toward the coils, and suspended chains strain against their fastenings. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Coils pull ferrous equipment toward them; remove metal gear or disable coils.
+  id: magnetic-forge
+- name: Hall of Thorns
+  type: easy_trap
+  appearance: Rows of narrow slits cover the floor around a chest. Metal spikes rise and withdraw in shifting patterns, accompanied by the clicking of hidden mechanisms beneath the stone. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Spikes rise in repeating patterns; time movement or jam slits.
+  id: hall-of-thorns
+- name: Treacherous Bridge
+  type: easy_trap
+  appearance: A narrow bridge spans a pit filled with spikes, with a chest visible beyond it. The bridge rocks gently on its central supports, and worn ropes hang from the surrounding walls. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: The bridge tilts under uneven weight; cross carefully, balance loads or secure ropes.
+  id: treacherous-bridge
+- name: Clockwork Tyrant
+  type: boss_fight
+  appearance: A towering mechanical figure stands amid scattered gears. Pistons drive its enormous limbs, and exposed cogs turn beneath gaps in its armor. Each movement sends a metallic shudder through the chamber. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: The Tyrant uses heavy mechanical strikes; jamming exposed gears reduces mobility and creates openings.
+  id: clockwork-tyrant
+- name: Mirror King
+  type: boss_fight
+  appearance: A regal figure stands among tall mirrors, its reflection appearing in several places at once. Silver light ripples across its robes, and identical silhouettes step across the mirrored surfaces. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: The King creates mirror duplicates; covering or breaking mirrors removes their support.
+  id: mirror-king
+- name: Rootmother
+  type: boss_fight
+  appearance: A colossal mass of roots and bark rises from the center of the chamber. Thick root clusters spread across the floor, and clouds of spores drift from openings in its trunk. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Rootmother attacks with roots and spores; sever root clusters to weaken her.
+  id: rootmother
+- name: Ashen Smith
+  type: boss_fight
+  appearance: A massive armored smith stands beside a roaring forge, its hammer glowing orange. Streams of sparks leap from the furnace toward its body, and the heat makes the air shimmer. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: The Smith gains strength from the forge; extinguishing it weakens its attacks.
+  id: ashen-smith
+- name: Hollow Conductor
+  type: boss_fight
+  appearance: A hollow-robed figure raises a baton before a collection of floating instruments. Their discordant music reverberates through the stone, and the figure moves in time with each swelling note. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: The Conductor commands instruments through music; silence or disable instruments to weaken it.
+  id: hollow-conductor
+- name: Devourer
+  type: boss_fight
+  appearance: An enormous chest dominates the chamber, its lid slowly opening to reveal rows of teeth. Thick, glistening tendrils uncoil from beneath it and drag across the stone floor. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: The giant mimic grapples with tendrils; sever tendrils to free victims and reduce its reach.
+  id: devourer
+- name: Blind Executioner
+  type: boss_fight
+  appearance: A towering executioner stands motionless, its eyes covered by a dark band. Its head turns toward each sound, and its heavy weapon scrapes the floor as it adjusts its stance. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: The Executioner tracks sound; distractions and quiet movement create openings.
+  id: blind-executioner
+- name: Architect’s Eye
+  type: boss_fight
+  appearance: A vast floating eye hangs between three luminous crystals. Stone fragments orbit its body, and translucent barriers shimmer into existence as the crystals pulse in unison. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: The Eye draws shielding from three crystals; destroy them to remove its barriers.
+  id: architects-eye
+- name: Necromancer’s Crypt
+  type: hard_fight
+  appearance: A robed figure stands among open graves, whispering over a glowing staff. Skeletons and decaying corpses rise around it, their empty eyes illuminated by a sickly green light. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: A necromancer commands undead; pressure the caster while controlling the minions.
+  id: necromancers-crypt
+- name: War Council
+  type: hard_fight
+  appearance: Armored officers gather around a table covered in maps. Their soldiers form ranks at a barked command, shields locking together as weapons rise toward the doorway. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Veteran officers coordinate soldiers; disrupt leadership and formation.
+  id: war-council
+- name: Arachnid Colony
+  type: hard_fight
+  appearance: Dense webs divide the chamber into narrow passages. Giant spiders cling to the strands, while a pale, translucent shape flickers in and out of sight behind them. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Giant spiders and a phase spider use webs and ambushes; clear webs and watch flanks.
+  id: arachnid-colony
+- name: Elemental Furnace
+  type: hard_fight
+  appearance: Pools of molten material glow between blackened platforms. Figures formed of living flame rise from the pools, sending waves of heat across the chamber as they move. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Fire elementals attack from molten pools; use platforms and appropriate resistance.
+  id: elemental-furnace
+- name: Drowned Temple
+  type: hard_fight
+  appearance: Dark water covers much of a ruined shrine. Shapes ripple beneath the surface, and towering figures of swirling water rise between partially submerged pillars. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Water elementals and aquatic foes use flooded terrain; seek high ground.
+  id: drowned-temple
+- name: Stone Legion
+  type: hard_fight
+  appearance: Stone guardians stand on raised platforms, their heavy feet grinding against the masonry. Winged gargoyles perch above them, watching the doorway with eyes that begin to glow. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Stone guardians and gargoyles combine heavy strikes and aerial attacks; separate them.
+  id: stone-legion
+- name: Shadow Chapel
+  type: hard_fight
+  appearance: Darkness gathers around a ruined altar despite the faint light at the doorway. Thin silhouettes peel away from the walls, and a taller spectral figure drifts among them. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Shadows and a stronger specter exploit darkness; use light and protect vulnerable characters.
+  id: shadow-chapel
+- name: Alchemical Disaster
+  type: hard_fight
+  appearance: Broken experimental vessels spill colored liquids across the floor. Several translucent masses move through the wreckage, absorbing scraps of glass and metal as they converge. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Multiple powerful oozes spread through spills; avoid clustering and corrosive surfaces.
+  id: alchemical-disaster
+- name: Hunter’s Lodge
+  type: hard_fight
+  appearance: Animal hides and hunting trophies cover the walls. Lean predators emerge from behind overturned furniture, spreading apart as they watch the doorway with unblinking eyes. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Predatory beasts coordinate ambushes; deny flanking routes and use cover.
+  id: hunters-lodge
+- name: Infernal Court
+  type: hard_fight
+  appearance: A throne of black iron stands beneath red banners. Horned figures gather around a taller fiend, whose hands glow with infernal light as it addresses its attendants. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: A stronger fiend commands lesser fiends; disrupt its support and avoid concentrated attacks.
+  id: infernal-court
+- name: Fungal Kingdom
+  type: hard_fight
+  appearance: Towering mushrooms form a dense forest beneath the ceiling. Clouds of spores drift between stalks, and bulky fungal creatures move among smaller figures with slow, deliberate steps. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Fungal brutes and smaller creatures use spores; avoid dense clouds and control chokepoints.
+  id: fungal-kingdom
+- name: Arcane Battery
+  type: hard_fight
+  appearance: Crystals embedded in the walls pulse with bright energy. Metallic constructs stand beneath them, their bodies lighting up in response to each pulse as they turn toward the doorway. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Constructs draw power from wall crystals; disabling crystals weakens their attacks.
+  id: arcane-battery
+- name: Blood Arena
+  type: hard_fight
+  appearance: A circular arena is surrounded by empty stone seats. Armored fighters stand on the sand, carrying different weapons and watching one another as closely as they watch you. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Multiple trained gladiators use complementary weapons; break their coordination.
+  id: blood-arena
+- name: Wind Chamber
+  type: hard_fight
+  appearance: Powerful gusts sweep through the chamber, carrying dust and loose stones. Twisting figures of compressed air take shape between pillars, their outlines constantly changing. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Air elementals push and lift targets; use pillars and secure footing.
+  id: wind-chamber
+- name: Icebound Legion
+  type: hard_fight
+  appearance: Ice covers the floor and walls. Frozen corpses in battered armor wrench themselves free of icy niches, their weapons trailing frost as they advance across the slick stone. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Armored undead advance over ice; manage slippery terrain and frost attacks.
+  id: icebound-legion
+- name: Swarm Chamber
+  type: hard_fight
+  appearance: Papery nests cling to the ceiling and walls. A rising buzz fills the chamber as dark clouds of insects emerge, weaving between the nests in restless spirals. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Multiple insect swarms converge from nests; area effects and barriers help.
+  id: swarm-chamber
+- name: Doppelganger Den
+  type: hard_fight
+  appearance: Several frightened-looking adventurers huddle beside scattered packs. Their faces seem oddly familiar, and their expressions change almost in unison as they notice the doorway. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Doppelgangers imitate adventurers and attempt deception before attacking; expose inconsistencies and isolate them.
+  id: doppelganger-den
+- name: Eye Gallery
+  type: hard_fight
+  appearance: Floating creatures with clusters of eyes drift above raised platforms. Their many pupils turn independently, and strange colored lights gather within several of their gazes. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Floating eye monsters use varied magical rays; break line of sight with cover.
+  id: eye-gallery
+- name: Troll Pit
+  type: hard_fight
+  appearance: Large, hunched creatures lurk among broken barrels and scorched stones. Braziers burn nearby, and cracked vessels leak a sharp-smelling liquid across the floor. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Trolls regenerate; use fire or acid to suppress regeneration.
+  id: troll-pit
+- name: Puppet Theatre
+  type: hard_fight
+  appearance: A small stage stands beneath hanging strings. Painted marionettes jerk into motion while taller figures manipulate the strings from behind a tattered curtain. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Puppeteers command animated minions; cut strings or defeat controllers.
+  id: puppet-theatre
+- name: Crushing Chamber
+  type: hard_trap
+  appearance: Opposing walls bear deep grooves and heavy metal fittings. A low grinding sound begins beneath the floor, and dust trickles from the seams as the walls slowly move inward. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Walls close progressively after entry; escape promptly or jam the mechanism.
+  id: crushing-chamber
+- name: Drowning Vault
+  type: hard_trap
+  appearance: Water gushes from openings high in the walls, splashing across the floor. Several large valves protrude from the masonry near grated drains, and the water level visibly rises. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Water rises after entry; open drains or close inlet valves before submersion.
+  id: drowning-vault
+- name: Bottomless Floor
+  type: hard_trap
+  appearance: Sections of the floor flicker and disappear, revealing an immense darkness beneath. Isolated stone platforms remain suspended above the void, their edges outlined by faint light. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Floor sections vanish in a pattern; use stable platforms, ropes or flight to escape.
+  id: bottomless-floor
+- name: Execution Grid
+  type: hard_trap
+  appearance: Thin beams of light sweep between metal emitters mounted in the walls. Their intersecting paths form a changing lattice across the chamber, leaving scorched marks wherever they strike stone. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Sweeping beams inflict severe damage; identify safe intervals or disable emitters.
+  id: execution-grid
+- name: Incinerator
+  type: hard_trap
+  appearance: A furnace-like glow fills the chamber, and the air grows hotter with every breath. Metal vents line the walls beside pulsing conduits, while the floor begins to radiate heat. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Heat escalates after entry; close vents or interrupt conduits and escape quickly.
+  id: incinerator
+- name: Petrification Gallery
+  type: hard_trap
+  appearance: Stone statues stand in rows, their faces turned toward the doorway. Their eyes emit a pale light, and several lifelike figures nearby appear caught halfway through gestures of alarm. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Statue gazes progressively petrify; avert eyes, use cover or disable the statues.
+  id: petrification-gallery
+- name: Airless Chamber
+  type: hard_trap
+  appearance: A faint whistling sound comes from crystals mounted near sealed vents. Loose scraps flutter toward them, and the air feels increasingly thin as the crystals brighten. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Crystals remove breathable air; disable them or reopen vents before suffocation.
+  id: airless-chamber
+- name: Acid Reservoir
+  type: hard_trap
+  appearance: A pool of green liquid bubbles beneath raised platforms. Corrosive vapor rises from its surface, and the liquid creeps upward along stained measuring marks on the walls. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Acid rises around platforms; reach high ground or drain the reservoir.
+  id: acid-reservoir
+- name: Falling Ceiling
+  type: hard_trap
+  appearance: A ceiling bristling with spikes hangs above the chamber. A bell tolls, and the ceiling drops slightly with a heavy mechanical clank. Recesses interrupt the walls at irregular intervals. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: The spiked ceiling descends in stages; jam supports or escape before it reaches the floor.
+  id: falling-ceiling
+- name: Chamber of Annihilation
+  type: hard_trap
+  appearance: A dark sphere drifts above the floor, surrounded by glowing runes. Dust and small fragments vanish as they touch its surface, and the sphere moves along a curving path. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: The moving sphere destroys matter on contact; avoid its path and interrupt controlling runes if possible.
+  id: chamber-of-annihilation
+- name: Inverted Abyss
+  type: hard_trap
+  appearance: Loose stones suddenly fall upward and strike the ceiling. Recesses mark both the floor and overhead stone, while ropes and broken furniture hang at strange angles before gravity shifts again. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: Gravity periodically reverses; secure ropes and use recesses to avoid lethal falls.
+  id: inverted-abyss
+- name: Lightning Cage
+  type: hard_trap
+  appearance: Tall pillars crackle with electrical energy. Bright arcs leap between them, leaving branching scorch marks across the floor. The flashes grow more frequent as the pillars hum louder. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Pillars discharge severe electrical arcs; time movement or disable power connections.
+  id: lightning-cage
+- name: Temporal Prison
+  type: hard_trap
+  appearance: Three enormous clocks tick at different speeds. Pale waves pass through the chamber, briefly freezing falling dust and then releasing it. The hands jerk forward in uneven bursts. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Temporal waves immobilize creatures; disrupt clock synchronization or move between pulses.
+  id: temporal-prison
+- name: Devouring Darkness
+  type: hard_trap
+  appearance: A patch of darkness spreads across the floor, swallowing the outlines of scattered objects. Unlit lamps stand along the walls, and the shadows deepen as the black patch expands. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Expanding darkness consumes exposed creatures; retreat or use magical light to suppress its advance.
+  id: devouring-darkness
+- name: Poison Reactor
+  type: hard_trap
+  appearance: Rows of sealed containers hiss beneath a network of pipes. Greenish gas leaks from several joints, gathering into an increasingly dense cloud. Ventilation grilles line the upper walls. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Toxic gas accumulates; seal leaking pipes, ventilate or escape before exposure becomes lethal.
+  id: poison-reactor
+- name: Soul Furnace
+  type: hard_trap
+  appearance: A large crystal hangs within concentric glowing seals. Wisps of pale light stream toward it, and the air feels unnaturally cold. The crystal pulses with a slow, heartbeat-like rhythm. The doorway frames a square chamber of ancient stone, roughly fifty feet across. Light catches the uneven surfaces of the walls, while the far corners remain dim and indistinct.
+  description: The crystal drains life energy; break the surrounding seals or leave its influence.
+  id: soul-furnace
+- name: Shattering Chamber
+  type: hard_trap
+  appearance: Glass fragments cover the floor beneath a vibrating metal device. A sudden ringing tone sends shards flying through the air, striking thick stone pillars with sharp, brittle cracks. The stone beneath your feet is cool and uneven, and the light from the doorway stretches across the chamber, revealing details that were hidden in the deeper shadows.
+  description: Vibration launches lethal glass shards; use pillars as cover and disable the vibrating device.
+  id: shattering-chamber
+- name: Hungry Sands
+  type: hard_trap
+  appearance: Fine sand pours from openings in the walls and gathers around raised platforms. The floor shifts beneath the growing dunes, and loose stones sink slowly into the moving surface. A faint echo follows every sound from the doorway, lingering among the walls before fading. The chamber extends some fifty feet in each direction, enclosed by ancient masonry.
+  description: Rising sand engulfs creatures; use platforms, ropes or block the inlets.
+  id: hungry-sands
+- name: Hall of Disintegration
+  type: hard_trap
+  appearance: Symbols flash across the floor in shifting groups. A moment later, patches of stone vanish without dust or debris, leaving perfectly smooth gaps where solid material stood. The air carries the unmistakable scent of old stone. Along the edges of the chamber, worn blocks and narrow seams catch the light, their surfaces marked by centuries of age.
+  description: Glowing symbols precede disintegration zones; move to unmarked areas or disrupt the runes.
+  id: hall-of-disintegration
+- name: Runic Detonation
+  type: hard_trap
+  appearance: A circle of runes glows around a central pillar. One symbol after another lights up, each accompanied by a deeper tone, while the air grows warm and faintly trembles. Beyond the immediate foreground, the chamber stretches into dimmer corners. The walls rise high above the floor, and the slightest movement sends a soft echo through the enclosed space.
+  description: Runes activate in sequence toward a catastrophic blast; interrupt the sequence or escape before completion.
+  id: runic-detonation
+- name: Fool’s Fortune
+  type: illusion
+  description: This treasure is illusory. Entering triggers fake doomsday. Narrate apparent collapses without changing the actual grid. The false treasure and apparent destruction vanish upon returning to the entrance. Entering the genuine treasure room ends the illusion and triggers real doomsday. Real doomsday takes precedence.
+  id: fools-fortune
+- name: The Gilded Vault
+  type: treasure
+  appearance: A magnificent vault opens before you, filled with heaps of glittering coins, precious stones and finely wrought treasures. Golden light spills across the polished stone floor, reflecting from silver vessels and jeweled ornaments. Rich fabrics drape the walls, and the air is quiet enough that every footstep rings clearly through the chamber.
+  id: the-gilded-vault
+- name: The Sapphire Treasury
+  type: treasure
+  appearance: Deep blue gemstones fill shallow silver bowls arranged on tiers of white marble. Crystal sculptures stand between the bowls, catching the light and scattering blue reflections across the ceiling. Open caskets reveal necklaces, polished sapphires and delicate silver chains. A broad carpet of midnight blue runs between the displays, its embroidered edges sparkling with tiny stones.
+  id: the-sapphire-treasury
+- name: The Royal Reliquary
+  type: treasure
+  appearance: Velvet cushions support golden crowns, jeweled sceptres and ceremonial blades along the walls of this stately chamber. Embroidered standards hang from tall brass poles, their threads gleaming in the warm light. At the center, a carved oak table bears silver chalices and open cases of rings, brooches and medallions bearing unfamiliar royal crests.
+  id: the-royal-reliquary
+- name: The Dragon’s Hoard
+  type: treasure
+  appearance: Great heaps of coins rise around the enormous rib cage of a long-dead dragon. Golden cups and jeweled ornaments lie scattered between its pale bones, while necklaces hang from the curved tips of its ribs. Amber light glints across the uneven mounds, illuminating ancient shields, ivory carvings and richly decorated boxes half buried beneath the wealth.
+  id: the-dragons-hoard
+- name: The Celestial Treasury
+  type: treasure
+  appearance: Silver stars hang from delicate chains above a floor of dark polished stone. Open cabinets display luminous pearls, golden bracelets and pendants shaped like moons and distant suns. A circular dais supports a collection of finely crafted celestial instruments studded with gems. Soft points of light drift across the ceiling, reflected in every polished surface.
+  id: the-celestial-treasury

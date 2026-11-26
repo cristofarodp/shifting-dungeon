@@ -1,0 +1,551 @@
+:root {
+    color-scheme: dark;
+    --browser-theme: #172333;
+    --page-bg: #101923;
+    --panel-bg: #192635;
+    --text: #e5edf5;
+    --panel-text: var(--text);
+    --control-bg: #233447;
+    --control-text: white;
+    --control-border: #536578;
+    --panel-border: #536578;
+    --tile-border: #536578;
+    --divider: #405063;
+    --party-divider: var(--divider);
+    --secondary-text: #b8c8d8;
+    --description-text: #d0dce7;
+    --selection: #8ed8ff;
+    --shift-color: #ffe044;
+    --void-text: #777;
+}
+
+body.doomsday {
+    --browser-theme: #231019;
+    --page-bg: #231019;
+    --panel-bg: #351921;
+    --control-bg: #47232c;
+    --control-border: #78535d;
+    --party-divider: #78535d;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+        --browser-theme: #e8edf3;
+        --page-bg: #e8edf3;
+        --panel-bg: #fff;
+        --text: #172333;
+        --control-bg: #f0f4f8;
+        --control-text: #172333;
+        --control-border: #8799ab;
+        --panel-border: #8799ab;
+        --divider: #c3ced9;
+        --party-divider: #c3ced9;
+        --secondary-text: #46596c;
+        --description-text: #34495e;
+        --selection: #17649a;
+        --shift-color: #8a6100;
+        --void-text: #aaa;
+    }
+
+    body.doomsday {
+        --browser-theme: #f5dce0;
+        --page-bg: #f5dce0;
+        --panel-bg: #fff0f1;
+        --panel-text: #391b23;
+        --control-bg: #f6dce0;
+        --control-text: #391b23;
+        --control-border: #ad7883;
+        --divider: #d4a4ae;
+        --party-divider: var(--divider);
+    }
+}
+
+body {
+    font: 15px system-ui;
+    background: var(--page-bg);
+    color: var(--text);
+    margin: auto;
+    max-width: 1000px;
+    padding: 16px;
+}
+
+button, input, select, .toolbar .download-guide {
+    font: inherit;
+    padding: 8px;
+    border: 1px solid var(--control-border);
+    border-radius: 6px;
+    background: var(--control-bg);
+    color: var(--control-text);
+}
+
+button, input, select {
+    margin: 3px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+section {
+    background: var(--panel-bg);
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+    color: var(--panel-text);
+}
+
+small {
+    color: var(--secondary-text);
+}
+
+h1, h2 {
+    margin: 8px 0;
+}
+
+label {
+    display: inline-block;
+}
+
+section p {
+    line-height: 1.5;
+}
+
+#status {
+    margin: 10px 0;
+    color: var(--secondary-text);
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0 8px;
+    font-size: 13px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#map {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    gap: 5px;
+    position: relative;
+    grid-template-rows: repeat(5,auto);
+    margin: 6px;
+}
+
+.tile {
+    min-height: 0;
+    padding: 12px 5px;
+    margin: 0;
+    overflow-wrap: anywhere;
+    font-size: 12px;
+    position: relative;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #fff;
+    border-color: var(--tile-border);
+}
+
+.tile.safe {
+    background: #278653;
+}
+
+.tile.tricky {
+    background: #b47c26;
+}
+
+.tile.danger {
+    background: #b4424b;
+}
+
+.tile.special {
+    background: #8bd4ff;
+    color: #142b40;
+}
+
+.tile.void {
+    background: #000;
+    color: var(--void-text);
+}
+
+.muted {
+    background: color-mix(in srgb,currentColor 0%, #59616b 70%, transparent);
+}
+
+.tile.safe.muted {
+    background: #49635a;
+}
+
+.tile.tricky.muted {
+    background: #716650;
+}
+
+.tile.danger.muted {
+    background: #70585d;
+}
+
+.tile.special.muted {
+    background: #657f90;
+}
+
+.selected {
+    outline: 2px solid var(--selection);
+}
+
+.roomicon {
+    font-size: clamp(18px,5vw,36px);
+    line-height: 1;
+}
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    gap: 1px;
+}
+
+.roomicon svg, .players svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+}
+
+.doorface {
+    position: absolute;
+    width: 32%;
+    height: 6px;
+    border-radius: 1px;
+    box-shadow: 0 0 0 1px #111;
+}
+
+.side0 {
+    top: 0;
+    left: 34%;
+}
+
+.side2 {
+    bottom: 0;
+    left: 34%;
+}
+
+.side1, .side3 {
+    height: 32%;
+    width: 6px;
+    top: 34%;
+}
+
+.side1 {
+    right: 0;
+}
+
+.side3 {
+    left: 0;
+}
+
+.clear {
+    background: #36df76;
+}
+
+.locked {
+    background: #ffe044;
+}
+
+.trapped {
+    background: #ff4040;
+}
+
+.both {
+    background: linear-gradient(90deg,#ffe044 50%,#ff4040 50%);
+}
+
+.side1.both, .side3.both {
+    background: linear-gradient(180deg,#ffe044 50%,#ff4040 50%);
+}
+
+.shift-highlight {
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    box-sizing: border-box;
+    border: 1px solid var(--shift-color);
+    border-radius: 6px;
+}
+
+.shift-highlight::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+}
+
+.shift-highlight.row.forward::after {
+    right: -5px;
+    top: calc(50% - 3px);
+    border-left-color: var(--shift-color);
+    border-right: 0;
+}
+
+.shift-highlight.row.backward::after {
+    left: -5px;
+    top: calc(50% - 3px);
+    border-right-color: var(--shift-color);
+    border-left: 0;
+}
+
+.shift-highlight.column.forward::after {
+    bottom: -5px;
+    left: calc(50% - 3px);
+    border-top-color: var(--shift-color);
+    border-bottom: 0;
+}
+
+.shift-highlight.column.backward::after {
+    top: -5px;
+    left: calc(50% - 3px);
+    border-bottom-color: var(--shift-color);
+    border-top: 0;
+}
+
+.toolbar, .party-heading, .party-actions, .open-door-status, .party-player, #roomactions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.party-heading, .open-door-status {
+    justify-content: space-between;
+}
+
+.party-player {
+    border-top: 1px solid var(--party-divider);
+    padding: 8px 0;
+}
+
+.party-player span {
+    flex: 1 1 180px;
+}
+
+.open-door-status {
+    margin: 10px 0;
+    padding: 8px 10px;
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+}
+
+.toolbar .download-guide {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.toolbar button, .party-actions button, #roomactions button, .party-player button {
+    margin: 0;
+}
+
+#roomactions {
+    margin: 12px 0;
+}
+
+.door {
+    border-top: 1px solid var(--divider);
+    padding: 8px 0;
+}
+
+.description {
+    margin: 6px 0;
+    color: var(--description-text);
+    font-style: italic;
+}
+
+#log {
+    max-height: 220px;
+    overflow: auto;
+}
+
+#inventory details, #notes details {
+    border-top: 1px solid var(--divider);
+    padding: 9px 0;
+}
+
+#inventory summary, #notes summary {
+    cursor: pointer;
+}
+
+#inventory details p {
+    margin: 8px 0 0;
+    color: var(--description-text);
+}
+
+#notes details p {
+    margin: 8px 0 0;
+    color: var(--description-text);
+    font-style: italic;
+}
+
+dialog {
+    background: var(--panel-bg);
+    color: var(--panel-text);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 85vw;
+}
+
+dialog::backdrop {
+    background: #0009;
+}
+
+#choiceOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 12px 0;
+}
+
+#doomsdayBanner {
+    background: #a52232;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: .22em;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    animation: doomPulse 2s ease-in-out infinite;
+}
+
+#doomsdayBanner[hidden] {
+    display: none;
+}
+
+.dm-info {
+    margin: 8px 0;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.dm-info:empty {
+    display: none;
+}
+
+.dm-info h1, .dm-info h2, .dm-info h3, .dm-info h4, .dm-info h5, .dm-info h6 {
+    margin: .8em 0 .3em;
+    line-height: 1.25;
+}
+
+.dm-info h1 {
+    font-size: 1.35em;
+}
+
+.dm-info h2 {
+    font-size: 1.2em;
+}
+
+.dm-info h3 {
+    font-size: 1.1em;
+}
+
+.dm-info h4, .dm-info h5, .dm-info h6 {
+    font-size: 1em;
+}
+
+.dm-info p, .dm-info ul, .dm-info ol {
+    margin: .4em 0;
+}
+
+.dm-info ul, .dm-info ol {
+    padding-inline-start: 1.5em;
+}
+
+.dm-info .dm-table {
+    overflow-x: auto;
+    margin: .6em 0;
+}
+
+.dm-info table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .95em;
+}
+
+.dm-info th, .dm-info td {
+    padding: .4em .6em;
+    border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+}
+
+.dm-info th {
+    background: color-mix(in srgb, currentColor 15%, transparent);
+}
+
+.dm-info tbody tr:nth-child(even) {
+    background: color-mix(in srgb, currentColor 7%, transparent);
+}
+
+.dm-info .md-left {
+    text-align: left;
+}
+
+.dm-info .md-center {
+    text-align: center;
+}
+
+.dm-info .md-right {
+    text-align: right;
+}
+
+.dm-info code {
+    font-family: monospace;
+    background: color-mix(in srgb, currentColor 10%, transparent);
+    padding: .1em .25em;
+    border-radius: 3px;
+}
+
+@keyframes doomPulse {
+    0%, 100% { background-color: #922033; }
+    50% { background-color: #c32c40; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #doomsdayBanner {
+        animation: none;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+
+    .tile {
+        padding: 8px 3px;
+    }
+
+    .players {
+        font-size: 13px;
+    }
+
+    .party-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .party-player span {
+        flex-basis: 100%;
+    }
+}

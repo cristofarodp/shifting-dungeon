@@ -1,0 +1,60 @@
+- name: Oak Door
+  appearance: Plain oak planks reinforced with horizontal iron bands.
+  id: oak-door
+- name: Golden Sun
+  appearance: Polished brass depicting a radiant sun.
+  id: golden-sun
+- name: Bone Gate
+  appearance: Ivory-colored door decorated with interlocking skeletal hands.
+  id: bone-gate
+- name: Serpent Door
+  appearance: Green wood with a coiled-snake handle.
+  id: serpent-door
+- name: Obsidian Gate
+  appearance: Reflective black stone with faint purple veins.
+  id: obsidian-gate
+- name: Moonlit Door
+  appearance: Dark blue with silver stars and crescent moons.
+  id: moonlit-door
+- name: Iron Bastion
+  appearance: Thick riveted iron plates and reinforced frame.
+  id: iron-bastion
+- name: Weeping Door
+  appearance: Wood carved with faces shedding silver tears.
+  id: weeping-door
+- name: Crimson Gate
+  appearance: Deep red lacquer with a black metal handle.
+  id: crimson-gate
+- name: Floral Door
+  appearance: White wood with colorful flowers and vines.
+  id: floral-door
+- name: Frozen Gate
+  appearance: Translucent blue material resembling ice, but not cold.
+  id: frozen-gate
+- name: Clockwork Door
+  appearance: Bronze with slowly rotating gears.
+  id: clockwork-door
+- name: Shattered Mirror
+  appearance: Fragmented mirrors arranged into a mosaic.
+  id: shattered-mirror
+- name: Bound Gate
+  appearance: Stone decorated with ornamental chains.
+  id: bound-gate
+- name: Ashen Door
+  appearance: Charred wood with glowing orange engravings.
+  id: ashen-door
+- name: Thousand Eyes
+  appearance: Purple door carved with open and closed eyes.
+  id: thousand-eyes
+- name: Labyrinth Gate
+  appearance: Sandstone engraved with an intricate maze.
+  id: labyrinth-gate
+- name: Storm Door
+  appearance: Dark steel with branching lightning bolts.
+  id: storm-door
+- name: Hollow Gate
+  appearance: Bronze with decorative holes and narrow slits.
+  id: hollow-gate
+- name: Nameless Door
+  appearance: Featureless grey stone with a simple handle.
+  id: nameless-door

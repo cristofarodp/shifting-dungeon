@@ -1,0 +1,35 @@
+\section{3. Dungeon structure}
+
+\subsection{Physical layout}
+
+The dungeon consists of 25 square chambers, each measuring 50 by 50 feet, arranged in a five-by-five grid with the entrance permanently at the center. Each room has four potential connections, one in each cardinal direction. The dungeon wraps around itself: travelling beyond its northern edge leads to its southern edge, and travelling beyond its eastern edge leads to its western edge. There is no conventional outer boundary. The geometry is magical rather than physical; ordinary architectural principles eventually reveal an impossible space.
+
+\subsection{Room distribution}
+
+\begin{longtable}{p{0.3\linewidth}p{0.17\linewidth}p{0.45\linewidth}}
+
+\rowcolor{tablehead} \textbf{Category} & \textbf{Rooms} & \textbf{Room types} \\
+
+\endfirsthead
+
+\rowcolor{tablehead} \textbf{Category} & \textbf{Rooms} & \textbf{Room types} \\
+
+\endhead
+
+Special & 2 & Entrance, treasure \\
+
+Safe & 5 & Empty, puzzle \\
+
+Tricky & 7 & Easy trap, easy fight \\
+
+Dangerous & 11 & Hard trap, hard fight, boss fight, illusion \\
+
+Total & 25 &  \\
+
+\end{longtable}
+
+The treasure initially lies at least three room transitions from the entrance, accounting for wrapping geometry. Subsequent shifts may bring it closer or farther away. Do not reveal the distribution to players.
+
+\subsection{Room catalogue}
+
+Over 100 rooms are programmed into the dungeon. Only a portion is selected for each run, so repeated adventures can produce substantially different experiences.

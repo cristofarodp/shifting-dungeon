@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="theme-color" content="#172333">
+<link rel="icon" href="icon.svg">
+<link rel="manifest" href="manifest.json">
+<title></title>
+<link rel="stylesheet" href="app.css">
+<h1 data-i18n="app.title"></h1>
+<div class="toolbar">
+    <button id="new" data-i18n="action.new"></button>
+    <button id="export" data-i18n="action.export"></button>
+    <button id="import" data-i18n="action.import"></button>
+    <input id="file" type="file" accept="application/json" hidden>
+    <button id="undo" data-i18n="action.undo"></button>
+    <button id="doomsday" data-i18n="action.doom"></button>
+    <a class="download-guide" href="assets/DM-Guide.pdf" target="_blank" rel="noopener" data-i18n="action.guide"></a>
+</div>
+<div id="status"></div>
+<section>
+    <div id="doomsdayBanner" role="status" hidden data-i18n="doom"></div>
+    <div id="map"></div>
+</section>
+<section id="detail"></section>
+<section id="party"></section>
+<section id="inventory"></section>
+<section id="notes"></section>
+<section><h2 data-i18n="history.title"></h2>
+    <div id="log"></div>
+</section>
+<footer><small><span data-i18n="app.title"></span><span id="releaseVersion"></span> · <a
+        href="https://github.com/cristofarodp/shifting-dungeon" target="_blank" rel="noopener"
+        data-i18n="app.source"></a></small></footer>
+<dialog id="choices" aria-labelledby="choiceTitle"><h2 id="choiceTitle"></h2>
+    <div id="choiceOptions"></div>
+    <button id="cancelChoice" data-i18n="action.cancel"></button>
+</dialog>
+<script>
+    if ('serviceWorker' in navigator) {
+        let reloading = false;
+        const isLocalhost = [
+            'localhost',
+            '127.0.0.1',
+            '[::1]'
+        ].includes(location.hostname);
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (!reloading) {
+                reloading = true;
+                location.reload()
+            }
+        });
+        if (isLocalhost) {
+            navigator.serviceWorker.getRegistration()
+                .then(registration => registration?.unregister());
+        } else {
+            navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).catch(() => {
+            });
+        }
+    }
+</script>
+<script src="app.js"></script>
+</html>

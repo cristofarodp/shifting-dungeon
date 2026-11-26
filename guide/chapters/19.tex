@@ -1,0 +1,25 @@
+\section{19. Room collapse}
+
+\subsection{When a collapse is checked}
+
+Once doomsday is active, a collapse check occurs whenever a door closes after at least one player crossed during that opening. If nobody crossed, neither connected room collapses. This prevents destroying chambers by simply opening and closing doors from safety.
+
+\subsection{Which rooms are checked}
+
+Both connected rooms are considered: the room from which the door was originally opened first, then the opposite room. The second check uses the updated state. A room collapses only if it contains no player characters, is not entrance or treasure, is not already collapsed, and removal would not disconnect the remaining dungeon. Applicable magical protection may also prevent collapse.
+
+\subsection{Connectivity protection}
+
+The dungeon cannot permanently divide into disconnected regions. A room serving as the only connection between surviving sections cannot collapse until another route exists.
+
+\begin{center}\input{assets/diagram-3.tex}\end{center}
+
+This rule also applies to subsequent shifts. Connectivity does not guarantee a safe or unlocked route; remaining connections may contain traps, locks or hostile encounters.
+
+\subsection{Permanent destruction}
+
+A genuinely collapsed room is removed permanently. Its contents, encounters, rewards and connections are inaccessible. A collapsed position may move during a legal shift, but the destroyed chamber does not return. Entrance and treasure remain intact.
+
+\subsection{Example}
+
+The party opens a door from A into B while doomsday is active. Three characters cross into B while one remains in A. On closure neither collapses because both are occupied. Later the last character crosses from A into B. On closure A becomes eligible for collapse. If removal disconnects the surviving dungeon, A remains intact; otherwise it is destroyed. This creates opportunities for coordinated movement and deliberate preservation.

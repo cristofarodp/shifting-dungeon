@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "assets": [
+    "app.js",
+    "app.css",
+    "assets/map-symbols.svg",
+    "assets/DM-Guide.pdf",
+    "icon.svg",
+    "manifest.json",
+    "content/rooms.yaml",
+    "content/doors.yaml",
+    "content/traps.yaml",
+    "content/items.yaml",
+    "content/notes.yaml",
+    "locale/i18n.yaml"
+  ]
+}

@@ -1,0 +1,66 @@
+
+\ProvidesPackage{theme}
+
+\input{assets/strings.tex}
+\RequirePackage[\guidelanguage]{babel}
+\RequirePackage{fontspec,geometry,xcolor,graphicx,longtable,array,amssymb,tikz,eso-pic,fancyhdr,titlesec,hyperref}
+
+\geometry{left=56pt,right=56pt,top=66pt,bottom=60pt}
+\setmainfont{Liberation Serif}
+\setsansfont{DejaVu Sans}
+
+\definecolor{ink}{HTML}{263237}
+\definecolor{gold}{HTML}{967743}
+\definecolor{paper}{HTML}{F8F3E7}
+\definecolor{tablehead}{HTML}{E5D8B9}
+
+\RequirePackage{colortbl}
+
+\color{ink}
+\pagecolor{paper}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{6pt}
+\setlength{\headheight}{14pt}
+\renewcommand{\arraystretch}{1.25}
+
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{1}
+
+\titleformat{\section}{\color{ink}\LARGE\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\color{ink}\sffamily\small\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+\titlespacing*{\subsection}{0pt}{7pt}{2pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\scriptsize \guideheader}
+\fancyfoot[R]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.4pt}
+
+\AddToShipoutPictureBG{
+    \begin{tikzpicture}[remember picture,overlay]
+        \draw[gold,line width=.45pt]
+            ([xshift=28pt,yshift=27pt]current page.south west)
+            rectangle
+            ([xshift=-28pt,yshift=-27pt]current page.north east);
+    \end{tikzpicture}
+}
+
+\hypersetup{
+    hidelinks,
+    pdftitle={\guidetitle},
+    pdfauthor={\guideauthor}
+}
+
+\newcommand{\makecover}{%
+    \begin{titlepage}
+    \pagecolor{ink}
+    \color{paper}
+    \input{assets/cover.tex}
+    \end{titlepage}
+    \pagecolor{paper}
+    \color{ink}
+    \setcounter{page}{2}
+}

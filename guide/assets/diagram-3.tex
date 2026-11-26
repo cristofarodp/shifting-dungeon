@@ -1,0 +1,16 @@
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[x=1cm,y=1cm,font=\sffamily\bfseries,room/.style={draw=gold,fill=ink,rounded corners=2pt,minimum size=.96cm,inner sep=0pt,text=white}]
+\path[use as bounding box] (0,0) rectangle (14.85,3.25);
+\foreach \i in {0,...,4} {
+  \ifnum\i=2
+    \node[room,fill=gold] at (4.83+1.05*\i,1.55) {!};
+  \else
+    \node[room] at (4.83+1.05*\i,1.55) {};
+  \fi
+}
+\foreach \i in {0,4} {
+  \node[room] at (4.83+1.05*\i,2.6) {};
+}
+\node[font=\rmfamily\itshape] at (7.425,.45) {The marked chamber is the only connection and cannot collapse.};
+\end{tikzpicture}%
+}

@@ -1,0 +1,57 @@
+\section{Appendix A — DM quick reference}
+
+\begin{longtable}{p{0.34\linewidth}p{0.6\linewidth}}
+
+\rowcolor{tablehead} \textbf{Event} & \textbf{Resolution} \\
+
+\endfirsthead
+
+\rowcolor{tablehead} \textbf{Event} & \textbf{Resolution} \\
+
+\endhead
+
+Dungeon generation & 5 safe, 7 tricky, 11 dangerous, entrance and treasure \\
+
+Ordinary door generation & 10 locked pairs, 5 trapped pairs, overlap allowed \\
+
+Entrance doors & Initially unlocked and untrapped \\
+
+Treasure approaches & Special locked and trapped states \\
+
+Door opens & Resolve relevant effects, shift if legal, discover adjacent room \\
+
+Door duration & Approximately six seconds \\
+
+Simultaneous openings & Opposed initiative; only one succeeds \\
+
+Threshold occupied at closure & Random harmless displacement \\
+
+Enemy at threshold & Returns to its own chamber \\
+
+Room becomes empty & Reset ordinary enemies, traps and unfinished puzzles \\
+
+Boss defeated & Permanent defeat; award boss reward \\
+
+Chest collected & Key, challenge reward and undiscovered note if available \\
+
+All challenge rewards collected & Award boss rewards instead \\
+
+All notes collected & No further notes \\
+
+Treasure entered & Pending doomsday \\
+
+Four or fewer undiscovered rooms & Pending doomsday \\
+
+Door closes & Resolve existing collapse checks, then activate pending doomsday \\
+
+Active doomsday & Check both connected rooms if a player crossed \\
+
+Collapse restriction & Preserve occupancy, special rooms and connectivity \\
+
+Resurrection Rune used & Revive all other dead characters \\
+
+False treasure reaches entrance & End illusion \\
+
+Treasure reaches entrance & Primary objective completed \\
+
+\end{longtable}

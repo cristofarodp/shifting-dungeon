@@ -1,0 +1,17 @@
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[x=1cm,y=1cm,font=\sffamily\bfseries,room/.style={draw=gold,fill=ink,rounded corners=2pt,minimum size=.96cm,inner sep=0pt,text=white}]
+\path[use as bounding box] (0,0) rectangle (14.85,3.06);
+\definecolor{diagramred}{HTML}{802E29}
+\definecolor{diagramunlocked}{HTML}{45965D}
+\definecolor{diagramlocked}{HTML}{C19B29}
+\node[text=diagramred] at (3.55,2.55) {BEFORE SHIFT};
+\node[text=diagramred] at (10.9,2.55) {AFTER SHIFT};
+\foreach \offset/\letter/\door in {0/A/diagramunlocked,7.35/C/diagramlocked} {
+  \node[room] at (\offset+2.88,1.62) {\letter};
+  \node[room] at (\offset+4.23,1.62) {B};
+  \fill[\door] (\offset+3.285,1.44) rectangle (\offset+3.435,1.8);
+  \fill[diagramunlocked] (\offset+3.72,1.44) rectangle (\offset+3.87,1.8);
+}
+\node[font=\rmfamily\itshape] at (7.425,.45) {C is locked; B is unlocked. Opening from B synchronizes both faces.};
+\end{tikzpicture}%
+}

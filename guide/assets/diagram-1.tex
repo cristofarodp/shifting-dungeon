@@ -1,0 +1,16 @@
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[x=1cm,y=1cm,font=\sffamily\bfseries,room/.style={draw=gold,fill=ink,rounded corners=2pt,minimum size=.96cm,inner sep=0pt,text=white}]
+\path[use as bounding box] (0,0) rectangle (14.85,3.42);
+\definecolor{diagramred}{HTML}{802E29}
+\node[text=diagramred] at (3.66,2.82) {BEFORE};
+\node[text=diagramred] at (11.16,2.82) {AFTER};
+\foreach \offset/\letters in {0/{A,B,C,D,E},7.5/{E,A,B,C,D}} {
+  \draw[gold,line width=1pt,rounded corners=3pt] (\offset+.99,1.26) rectangle (\offset+6.33,2.4);
+  \foreach \letter [count=\i from 0] in \letters {
+    \node[room] at (\offset+1.56+1.05*\i,1.83) {\letter};
+  }
+}
+\draw[diagramred,line width=1.5pt,-latex] (6.6,1.83) -- (7.8,1.83);
+\node[font=\rmfamily\itshape] at (7.425,.61) {The last chamber wraps to the first position.};
+\end{tikzpicture}%
+}
