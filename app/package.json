@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "start": "vite",
-    "build": "vite build && vite build --config vite.pwa.config.js",
+    "build": "vite build",
+    "build:pwa": "vite build && vite build --config vite.pwa.config.js",
     "preview": "vite preview"
   },
   "keywords": [],
