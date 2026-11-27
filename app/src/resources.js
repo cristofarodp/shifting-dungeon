@@ -1,5 +1,6 @@
 import * as jsyaml from 'js-yaml';
-import { DungeonApp, roomTypes, roomQuotas } from './dungeon.js';
+import {DungeonApp, roomTypes, roomQuotas} from './dungeon.js';
+
 async function loadIcons() {
     const icons = new Map();
     const response = await fetch('assets/map-symbols.svg');
@@ -74,5 +75,4 @@ async function loadResources() {
 }
 
 
-
-export { loadResources };
+export {loadResources};

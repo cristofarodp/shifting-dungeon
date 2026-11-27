@@ -1,5 +1,6 @@
 import markdownit from 'markdown-it';
-import { DungeonApp } from './dungeon.js';
+import {DungeonApp} from './dungeon.js';
+
 const markdown = (() => {
     const md = markdownit({html: false, linkify: false});
     md.disable(['image', 'link', 'autolink']);

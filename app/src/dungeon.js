@@ -1,4 +1,3 @@
-
 'use strict';
 
 const roomTypes = {
@@ -463,12 +462,14 @@ class DungeonApp {
         this.selected = 'E';
         this.save();
     }
+
     undo() {
         if (!this.previous) return;
         this.state = this.previous;
         this.previous = null;
         this.save();
     }
+
     importState(value) {
         const next = this.validateSave(value);
         this.previous = clone(this.state);
@@ -476,42 +477,127 @@ class DungeonApp {
         this.selected = 'E';
         this.save();
     }
+
     manualDoom() {
-        if (!this.state.doom) this.act(() => { this.state.doom = true; this.log('log.manualDoom'); });
+        if (!this.state.doom) this.act(() => {
+            this.state.doom = true;
+            this.log('log.manualDoom');
+        });
     }
-    selectRoom(id) { this.selected = id; }
-    collapseGrid(id) { return this.state.grid.map(x => x === id ? null : x); }
-    canCollapse(id) { return id !== 'E' && id !== this.state.treasure && !this.occupied(id) && !this.state.open && connected(this.collapseGrid(id)); }
+
+    selectRoom(id) {
+        this.selected = id;
+    }
+
+    collapseGrid(id) {
+        return this.state.grid.map(x => x === id ? null : x);
+    }
+
+    canCollapse(id) {
+        return id !== 'E' && id !== this.state.treasure && !this.occupied(id) && !this.state.open && connected(this.collapseGrid(id));
+    }
+
     manualCollapse(id) {
         if (!this.canCollapse(id)) return;
         const pos = this.state.grid.indexOf(id);
-        this.act(() => { this.state.grid = this.collapseGrid(id); this.selected = 'void:' + pos; this.log('log.manualCollapse', {room: this.roomRef(id)}); });
+        this.act(() => {
+            this.state.grid = this.collapseGrid(id);
+            this.selected = 'void:' + pos;
+            this.log('log.manualCollapse', {room: this.roomRef(id)});
+        });
     }
+
     shiftOptions(id) {
         const pos = this.state.grid.indexOf(id);
         return this.legal(this.state.open ? [this.state.open.a, this.state.open.b] : []).filter(x => (x.axis === 'row' && x.index === Math.floor(pos / 5)) || (x.axis === 'column' && x.index === pos % 5));
     }
+
     manualShift(id, direction) {
         const x = this.shiftOptions(id).find(o => o.direction === direction);
         if (!x) return;
-        this.act(() => { this.applyShift(x); this.log('log.manualShift', {shift: {shift: {axis: x.axis, index: x.index, step: x.step}}}); });
+        this.act(() => {
+            this.applyShift(x);
+            this.log('log.manualShift', {shift: {shift: {axis: x.axis, index: x.index, step: x.step}}});
+        });
     }
-    teleportCandidates(id) { return this.state.players.map((p,i) => ({p,i})).filter(x => x.p.room !== id); }
+
+    teleportCandidates(id) {
+        return this.state.players.map((p, i) => ({p, i})).filter(x => x.p.room !== id);
+    }
+
     teleport(id, i) {
         if (!this.room(id).seen || this.state.open || !this.teleportCandidates(id).some(x => x.i === i)) return;
-        this.act(() => { const p = this.state.players[i]; p.room = id; if (id === this.state.treasure && p.alive) this.state.treasureEntered = true; this.log('log.teleport', {player: p.name, room: this.roomRef(id)}); this.doom(); });
+        this.act(() => {
+            const p = this.state.players[i];
+            p.room = id;
+            if (id === this.state.treasure && p.alive) this.state.treasureEntered = true;
+            this.log('log.teleport', {player: p.name, room: this.roomRef(id)});
+            this.doom();
+        });
     }
-    discover(id) { this.act(() => { this.room(id).seen = true; this.doom(); }); }
-    toggleAnchor(id) { this.act(() => { const r = this.room(id); r.anchor = !r.anchor; }); }
-    chest(id) { this.act(() => this.collectChest(this.room(id))); }
-    solve(id) { this.act(() => { this.room(id).solved = true; }); }
-    boss(id) { this.act(() => this.collectBoss(this.room(id))); }
-    unlock(a,d,b) { this.act(() => { this.change(a,d,b,'l'); this.log('log.lock'); }); }
-    disarm(a,d,b) { this.act(() => { const f = this.effective(a,d,b); this.change(a,d,b,'t'); this.log('log.trap', {trap: ref('trap', f.trap)}); }); }
-    addPlayer(name) { if (name) this.act(() => this.state.players.push({name, room:'E', alive:true})); }
-    clearPlayers() { this.act(() => { this.state.players = []; this.log('log.playersCleared'); }); }
-    togglePlayer(i) { this.act(() => { const p = this.state.players[i]; p.alive = !p.alive; if (p.alive && !this.state.grid.includes(p.room)) p.room = 'E'; }); }
+
+    discover(id) {
+        this.act(() => {
+            this.room(id).seen = true;
+            this.doom();
+        });
+    }
+
+    toggleAnchor(id) {
+        this.act(() => {
+            const r = this.room(id);
+            r.anchor = !r.anchor;
+        });
+    }
+
+    chest(id) {
+        this.act(() => this.collectChest(this.room(id)));
+    }
+
+    solve(id) {
+        this.act(() => {
+            this.room(id).solved = true;
+        });
+    }
+
+    boss(id) {
+        this.act(() => this.collectBoss(this.room(id)));
+    }
+
+    unlock(a, d, b) {
+        this.act(() => {
+            this.change(a, d, b, 'l');
+            this.log('log.lock');
+        });
+    }
+
+    disarm(a, d, b) {
+        this.act(() => {
+            const f = this.effective(a, d, b);
+            this.change(a, d, b, 't');
+            this.log('log.trap', {trap: ref('trap', f.trap)});
+        });
+    }
+
+    addPlayer(name) {
+        if (name) this.act(() => this.state.players.push({name, room: 'E', alive: true}));
+    }
+
+    clearPlayers() {
+        this.act(() => {
+            this.state.players = [];
+            this.log('log.playersCleared');
+        });
+    }
+
+    togglePlayer(i) {
+        this.act(() => {
+            const p = this.state.players[i];
+            p.alive = !p.alive;
+            if (p.alive && !this.state.grid.includes(p.room)) p.room = 'E';
+        });
+    }
 
 }
 
-export { DungeonApp, t, eventText, roomTypes, dirs, fresh, connected, roomQuotas };
+export {DungeonApp, t, eventText, roomTypes, dirs, fresh, connected, roomQuotas};

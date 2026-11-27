@@ -1,20 +1,7 @@
 const asset = name => new URL(name, import.meta.url);
 
-async function loadApplication() {
-    const css = document.createElement('link');
-    css.rel = 'stylesheet';
-    css.href = asset('app.css').href;
-    await new Promise((resolve, reject) => {
-        css.onload = resolve;
-        css.onerror = reject;
-        document.head.append(css);
-    });
-    await import(/* @vite-ignore */ asset('app.js').href);
-}
-
 async function start() {
     if (!('serviceWorker' in navigator)) {
-        await loadApplication();
         return;
     }
 
@@ -29,7 +16,6 @@ async function start() {
     if (workers.controller) {
         workers.register(asset('sw.js'), {updateViaCache: 'none'})
             .catch(console.error);
-        await loadApplication();
         return;
     }
 
@@ -56,7 +42,7 @@ async function start() {
 
 function showError(error) {
     console.error(error);
-    document.getElementById('app').textContent = 'Unable to load the dungeon. Reload to retry.';
+    document.getElementById('app').textContent = 'Unable to load the application. Reload to retry.';
 }
 
 start().catch(showError);
