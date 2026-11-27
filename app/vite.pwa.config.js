@@ -17,8 +17,8 @@ export default defineConfig(({mode}) => ({
             ).replace(/<\/script/gi, '<\\/script');
 
             writeFileSync('dist/index.html', readFileSync('dist/index.html', 'utf8')
-                .replace('<link rel="stylesheet" crossorigin href="./app.css">', '')
-                .replace('<script type="module" crossorigin src="./app.js"></script>', '')
+                .replace(/<link\b[^>]*href="\.\/app\.css"[^>]*>/g, '')
+                .replace(/<script\b[^>]*src="\.\/app\.js"[^>]*><\/script>/g, '')
                 .replace(
                     '</html>',
                     () => `<script type="module">${bootstrap}</script>\n</html>`
