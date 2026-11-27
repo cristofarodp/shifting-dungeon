@@ -1,11 +1,5 @@
 const asset = name => new URL(name, import.meta.url);
 
-const isLocalhost = [
-    'localhost',
-    '127.0.0.1',
-    '[::1]'
-].includes(location.hostname);
-
 async function loadApplication() {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -16,7 +10,7 @@ async function loadApplication() {
 }
 
 async function start() {
-    if (isLocalhost || !('serviceWorker' in navigator)) {
+    if (!('serviceWorker' in navigator)) {
         await loadApplication();
         return;
     }
