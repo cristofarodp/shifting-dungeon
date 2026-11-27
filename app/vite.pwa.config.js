@@ -12,9 +12,8 @@ export default defineConfig(({mode}) => ({
         name: 'configure-pwa', closeBundle() {
             copyFileSync('src/pwa/manifest.json', 'dist/manifest.json');
 
-            const bootstrap = readFileSync(
-                'dist/bootstrap.js', 'utf8'
-            ).replace(/<\/script/gi, '<\\/script');
+            const bootstrap = readFileSync('dist/bootstrap.js', 'utf8')
+                .replace(/<\/script/gi, '<\\/script');
 
             writeFileSync('dist/index.html', readFileSync('dist/index.html', 'utf8')
                 .replace(/<link\b[^>]*href="\.\/app\.css"[^>]*>/g, '')
