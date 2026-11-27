@@ -9,6 +9,7 @@ export default defineConfig(({mode}) => ({
         }
     }],
     build: {
+        assetsInlineLimit: 0,
         minify: mode !== 'development',
         sourcemap: mode === 'development',
         cssCodeSplit: false,
