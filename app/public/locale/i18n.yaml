@@ -1,0 +1,98 @@
+action.addPlayer: Add player
+action.anchor: Anchor room
+action.boss: Boss defeated
+action.cancel: Cancel
+action.chest: Collect chest
+action.clearPlayers: Clear player list
+action.close: Close door
+action.collapse: Collapse
+action.cross: Cross threshold
+action.dead: Mark dead
+action.disarm: Disarm / trigger
+action.discover: Mark discovered
+action.doom: Trigger doomsday
+action.export: Export JSON
+action.guide: Open DM Guide
+action.import: Import JSON
+action.new: New dungeon
+action.open: Open
+action.puzzle: Puzzle solved
+action.removeAnchor: Remove anchor
+action.respawn: Respawn
+action.revive: Revive
+action.shift: Shift
+action.shiftRoom: Shift room
+action.teleport: Teleport
+action.teleportPlayer: Teleport player
+action.undo: Undo
+action.unlock: Unlock / break
+app.language: en
+app.source: source
+app.title: Shifting Dungeon
+app.version: ' v{version}'
+confirm.clearPlayers: Remove all players?
+confirm.collapse: Collapse {room}?
+confirm.new: Replace current dungeon?
+direction.E: E
+direction.N: N
+direction.S: S
+direction.W: W
+direction.east: east
+direction.north: north
+direction.south: south
+direction.west: west
+doom: DOOMSDAY
+doom.inactive: Doomsday inactive
+door.allClosed: All doors closed
+door.clear: Clear
+door.collapsed: '{direction} — collapsed'
+door.locked: Locked
+door.openPair: 'Open: {from} ↔ {to}'
+door.openStatus: Door open
+door.status: '{direction} → {room} · {look} · {lock} · {trap} '
+door.trapped: Trapped
+door.unlocked: Unlocked
+error.backup: 'Save failed: {error}. Export a backup now'
+error.import: 'Import failed: {error}. The current dungeon has not been changed.'
+error.reset: 'The saved dungeon cannot be loaded: {error}. A new dungeon will be generated.'
+error.start: 'Unable to load dungeon content: {error}'
+error.startFailed: Failed to load dungeon content
+history.title: Event history
+inventory.empty: No objects collected yet.
+inventory.quantity: ' × {count}'
+inventory.title: Collected objects
+log.chest: 'Chest: {item} + {key}'
+log.closed: Door closed
+log.collapse: '{room} collapsed'
+log.doom: DOOMSDAY activated
+log.enter: '{player} entered {room}'
+log.generated: Dungeon generated.
+log.lock: Lock cleared
+log.manualCollapse: '{room} manually collapsed'
+log.manualDoom: DOOMSDAY manually activated
+log.manualShift: 'Manual shift: {shift}'
+log.noShift: No legal shift
+log.note: 'Note discovered: {note}'
+log.open: Opened {from} → {to}
+log.playersCleared: Player list cleared
+log.preserved: '{room} preserved: connectivity'
+log.respawn: Respawned {players} in {room}
+log.reward: '{reward} awarded'
+log.shift: 'Shift: {shift}'
+log.teleport: '{player} teleported to {room}'
+log.trap: 'Trap cleared: {trap}'
+notes.empty: No notes discovered yet.
+notes.title: Notes ({count}/{total})
+party.title: Party
+player.alive: Alive
+player.dead: Dead
+player.status: '{player} · {room} · {state}'
+prompt.name: Character name
+room.collapsed: Collapsed room
+room.discovered: Discovered
+room.status: Room {id} · {state}
+room.undiscovered: Undiscovered
+shift.column: column {number} {direction}
+shift.row: row {number} {direction}
+status: Discovered {discovered}/25 · Remaining {remaining}/25 · {doom} · {doors}
+unknown: Unknown

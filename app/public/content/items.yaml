@@ -1,0 +1,110 @@
+- name: Prism of Foresight
+  type: challenge_reward
+  appearance: A translucent triangular crystal with shifting colors at its core.
+  description: Identifies an adjacent room as safe, tricky or dangerous. Reusable; cooldown.
+  id: prism-of-foresight
+- name: Reality Anchor
+  type: challenge_reward
+  appearance: A miniature black iron anchor engraved with geometric runes.
+  description: Permanently anchors a room, preventing its row and column from shifting. Single placement.
+  id: reality-anchor
+- name: Wand of Displacement
+  type: challenge_reward
+  appearance: A silver wand tipped with four directional arrows.
+  description: Shifts the current row or column one step in a chosen legal direction. Single use.
+  id: wand-of-displacement
+- name: Cartographer’s Eye
+  type: challenge_reward
+  appearance: A polished glass eye set in a brass ring.
+  description: Reveals the current position of a previously discovered room. Reusable; cooldown.
+  id: cartographers-eye
+- name: Threshold Mirror
+  type: challenge_reward
+  appearance: A palm-sized oval mirror in a plain silver frame.
+  description: Reveals an adjacent room’s interior without opening its door. Single use.
+  id: threshold-mirror
+- name: Master Key
+  type: challenge_reward
+  appearance: A golden key with an elaborate crown-shaped bow.
+  description: Unlocks one door without disarming its trap. Single use.
+  id: master-key
+- name: Nullstone
+  type: challenge_reward
+  appearance: A smooth matte-black pebble that absorbs reflections.
+  description: Safely disarms one door trap. Single use.
+  id: nullstone
+- name: Stasis Hourglass
+  type: challenge_reward
+  appearance: A tiny hourglass containing motionless silver sand.
+  description: Prevents the current room’s next eligible collapse. Single use.
+  id: stasis-hourglass
+- name: Warding Bell
+  type: challenge_reward
+  appearance: A bronze handbell engraved with protective circles.
+  description: Permanently prevents ordinary enemies respawning in one room. Single use.
+  id: warding-bell
+- name: Echo Compass
+  type: challenge_reward
+  appearance: A brass compass with a luminous blue needle.
+  description: Indicates the direction of the entrance. Unlimited.
+  id: echo-compass
+- name: Rod of Stillness
+  type: challenge_reward
+  appearance: A short ivory rod marked with parallel black lines.
+  description: Prevents the next door-triggered shift. Single use.
+  id: rod-of-stillness
+- name: Chronometer
+  type: challenge_reward
+  appearance: A pocket watch with a single numbered dial.
+  description: Displays undiscovered room count and doomsday status. Unlimited.
+  id: chronometer
+- name: Spectral Chalk
+  type: challenge_reward
+  appearance: A pale chalk stick that leaves faintly glowing marks.
+  description: Marks a room so it is detectable from adjacent rooms. Three uses.
+  id: spectral-chalk
+- name: Crystal of Revelation
+  type: challenge_reward
+  appearance: A clear faceted crystal with a suspended golden spark.
+  description: Reveals the mechanism and trigger of a visible trap. Reusable; cooldown.
+  id: crystal-of-revelation
+- name: Seal of Sanctuary
+  type: challenge_reward
+  appearance: A round wax seal mounted on a white stone disc.
+  description: Suppresses hostile creatures and room traps for ten minutes. Single use.
+  id: seal-of-sanctuary
+- name: Lantern of Truth
+  type: challenge_reward
+  appearance: A small iron lantern containing a steady white flame.
+  description: Reveals illusions, disguised creatures and illusory objects within its light. Persistent.
+  id: lantern-of-truth
+- name: Thread of Ariadne
+  type: challenge_reward
+  appearance: A spool of fine golden thread.
+  description: Reveals a shortest accessible route to the entrance at activation. Single use.
+  id: thread-of-ariadne
+- name: Threshold Wedge
+  type: challenge_reward
+  appearance: A triangular steel wedge etched with a clock symbol.
+  description: Holds a door open for up to one minute, blocking all other doors. Reusable; cooldown.
+  id: threshold-wedge
+- name: Pendulum of Possibilities
+  type: challenge_reward
+  appearance: A silver pendulum suspended from a delicate chain.
+  description: Reveals all currently legal shifts. Unlimited.
+  id: pendulum-of-possibilities
+- name: Phoenix Ember
+  type: challenge_reward
+  appearance: A warm amber ember enclosed in a glass bead.
+  description: Automatically restores bearer to 1 HP when first reduced to 0 HP. Single use.
+  id: phoenix-ember
+- name: Door Key
+  type: key
+  appearance: A small brass key with a circular bow and shifting teeth.
+  description: Unlocks one door without disarming its trap. Single use.
+  id: door-key
+- name: Resurrection Rune
+  type: boss_reward
+  appearance: A white stone tablet engraved with a softly glowing golden symbol.
+  description: Resurrects all dead player characters at full HP with their items. Transfers to a living player if its bearer dies. Single use.
+  id: resurrection-rune

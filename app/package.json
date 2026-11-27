@@ -1,11 +1,10 @@
 {
   "name": "app",
   "private": true,
-  "main": "app.js",
   "scripts": {
-    "build": "node build.mjs",
-    "build:production": "node build.mjs --production",
-    "start": "npm run build && esbuild --servedir=dist --serve=8080"
+    "start": "vite",
+    "build": "vite build && vite build --config vite.pwa.config.js",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "Cristofaro Del Prete",
@@ -13,9 +12,12 @@
   "description": "",
   "dependencies": {
     "js-yaml": "5.5.0",
-    "markdown-it": "15.0.3"
+    "markdown-it": "15.0.3",
+    "vue": "^3.5.46"
   },
   "devDependencies": {
-    "esbuild": "0.28.2"
-  }
+    "@vitejs/plugin-vue": "6.0.1",
+    "vite": "7.3.7"
+  },
+  "type": "module"
 }
