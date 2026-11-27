@@ -36,10 +36,7 @@ async function importSave(e) {
 
 watchEffect(() => {
   document.body.classList.toggle('doomsday', !!app.state.doom);
-  const themeColor = document.querySelector('meta[name="theme-color"]');
-  if (themeColor) {
-    themeColor.content = getComputedStyle(document.body).getPropertyValue('--browser-theme').trim();
-  }
+  document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).getPropertyValue('--browser-theme').trim();
 });
 </script>
 <template>

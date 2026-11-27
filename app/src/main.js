@@ -26,10 +26,7 @@ async function start() {
     await loadResources();
     document.documentElement.lang = t('app.language');
     document.title = t('app.title');
-    const pwaTitle = document.querySelector('meta[name="apple-mobile-web-app-title"]');
-    if (pwaTitle) {
-        pwaTitle.content = t('app.title');
-    }
+    document.querySelector('meta[name="apple-mobile-web-app-title"]').content = t('app.title');
     const app = reactive(new DungeonApp());
     window.app = app;
     app.initialize();
@@ -38,10 +35,7 @@ async function start() {
     release.value = await releaseVersion();
     const theme = matchMedia('(prefers-color-scheme: light)');
     const sync = () => {
-        const themeColor = document.querySelector('meta[name="theme-color"]');
-        if (themeColor) {
-            themeColor.content = getComputedStyle(document.body).getPropertyValue('--browser-theme').trim();
-        }
+        document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).getPropertyValue('--browser-theme').trim();
     }
     if (theme.addEventListener) theme.addEventListener('change', sync); else theme.addListener(sync);
 }

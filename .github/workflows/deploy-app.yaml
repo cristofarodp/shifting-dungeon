@@ -43,7 +43,7 @@ jobs:
         working-directory: guide
         run: |
           set -euo pipefail
-          dist="app/public/assets"
+          dist="../app/public/assets"
           mkdir -p "$dist"
           work=$(mktemp -d)
           trap 'rm -rf "$work"' EXIT

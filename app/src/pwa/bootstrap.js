@@ -1,7 +1,23 @@
 const asset = name => new URL(name, import.meta.url);
 
+const isLocalhost = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]'
+].includes(location.hostname);
+
+async function loadApplication() {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = asset('app.css').href;
+    document.head.append(link);
+
+    await import(asset('app.js').href);
+}
+
 async function start() {
-    if (!('serviceWorker' in navigator)) {
+    if (isLocalhost || !('serviceWorker' in navigator)) {
+        await loadApplication();
         return;
     }
 
@@ -16,6 +32,7 @@ async function start() {
     if (workers.controller) {
         workers.register(asset('sw.js'), {updateViaCache: 'none'})
             .catch(console.error);
+        await loadApplication();
         return;
     }
 

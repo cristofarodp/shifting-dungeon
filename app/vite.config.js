@@ -16,7 +16,11 @@ export default defineConfig(({mode}) => ({
             output: {
                 inlineDynamicImports: true,
                 entryFileNames: 'app.js',
-                assetFileNames: asset => asset.name?.endsWith('.css') ? 'app.css' : 'assets/[name][extname]'
+                assetFileNames: asset => {
+                    if (asset.name?.endsWith('.css')) return 'app.css';
+                    if (asset.name?.endsWith('icon.svg')) return 'icon.svg';
+                    return 'assets/[name][extname]';
+                }
             }
         }
     }
